@@ -1,31 +1,21 @@
-Lish Website
+# Lish Website
 
-Overview
-
+## 🌟 Overview
 Lish Website is a simple and clean landing page designed to introduce users to the application and provide essential information.
 
-Features
+## ✨ Features
+- **Responsive Design** – Optimized for all screen sizes.
+- **Clean UI with Tailwind CSS** – Modern and minimal styling.
+- **Fast & Lightweight** – Optimized for performance.
 
-Responsive design
+## 🛠 Technologies Used
+- **HTML** – Structure of the webpage.
+- **CSS (Tailwind CSS)** – Styling and layout.
+- **JavaScript** – Interactive elements.
 
-Clean UI with Tailwind CSS
+## 🚀 Installation & Setup
 
-Fast and lightweight
-
-Technologies Used
-
-HTML
-
-CSS (Tailwind CSS)
-
-JavaScript
-
-Installation & Setup
-
-Clone the Repository
-
-git clone https://github.com/your-username/NutriList.git
-cd NutriList
-
-Open the Project in a Browser
-Simply open the index.html file in your preferred browser.
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/LishWebsite.git
+cd LishWebsite
