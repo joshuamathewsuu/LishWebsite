@@ -30,7 +30,7 @@ export function WaitlistForm() {
     onSuccess: () => {
       toast({
         title: "Thank you for joining!",
-        description: "We'll notify you when List launches.",
+        description: "We'll notify you when Lish launches.",
       });
       form.reset();
     },

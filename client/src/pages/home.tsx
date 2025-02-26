@@ -7,9 +7,9 @@ import { Leaf, Heart, Brain } from "lucide-react";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <nav className="fixed w-full border-b bg-background/95 backdrop-blur">
+      <nav className="fixed w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <span className="text-2xl font-bold text-primary">List</span>
+          <span className="text-2xl font-bold text-primary">Lish</span>
           <ThemeToggle />
         </div>
       </nav>
@@ -28,7 +28,7 @@ export default function Home() {
               <span className="text-primary">Nutrition Assistant</span>
             </h1>
             <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
-              List helps you make better food choices with personalized nutrition insights and meal planning.
+              Lish helps you make better food choices with personalized nutrition insights and meal planning.
             </p>
             <div className="mt-8">
               <WaitlistForm />
@@ -38,48 +38,98 @@ export default function Home() {
 
         <section className="container py-12 md:py-24">
           <div className="grid gap-8 md:grid-cols-3">
-            <Card className="p-6">
-              <Leaf className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">Smart Meal Planning</h3>
-              <p className="text-muted-foreground">
-                Get personalized meal suggestions based on your preferences and nutritional needs.
-              </p>
+            <Card className="relative overflow-hidden">
+              <div className="absolute inset-0">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+                  alt="Healthy meal planning"
+                  className="object-cover w-full h-full opacity-20"
+                />
+              </div>
+              <div className="relative p-6">
+                <Leaf className="h-12 w-12 text-primary mb-4" />
+                <h3 className="text-xl font-bold mb-2">Smart Meal Planning</h3>
+                <p className="text-muted-foreground">
+                  Get personalized meal suggestions based on your preferences and nutritional needs.
+                </p>
+              </div>
             </Card>
-            <Card className="p-6">
-              <Heart className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">Health Tracking</h3>
-              <p className="text-muted-foreground">
-                Monitor your nutrition goals and track your progress with detailed insights.
-              </p>
+            <Card className="relative overflow-hidden">
+              <div className="absolute inset-0">
+                <img
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b"
+                  alt="Health tracking"
+                  className="object-cover w-full h-full opacity-20"
+                />
+              </div>
+              <div className="relative p-6">
+                <Heart className="h-12 w-12 text-primary mb-4" />
+                <h3 className="text-xl font-bold mb-2">Health Tracking</h3>
+                <p className="text-muted-foreground">
+                  Monitor your nutrition goals and track your progress with detailed insights.
+                </p>
+              </div>
             </Card>
-            <Card className="p-6">
-              <Brain className="h-12 w-12 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">AI-Powered Insights</h3>
-              <p className="text-muted-foreground">
-                Receive intelligent recommendations to optimize your diet and lifestyle.
-              </p>
+            <Card className="relative overflow-hidden">
+              <div className="absolute inset-0">
+                <img
+                  src="https://images.unsplash.com/photo-1543362906-acfc16c67564"
+                  alt="AI nutrition insights"
+                  className="object-cover w-full h-full opacity-20"
+                />
+              </div>
+              <div className="relative p-6">
+                <Brain className="h-12 w-12 text-primary mb-4" />
+                <h3 className="text-xl font-bold mb-2">AI-Powered Insights</h3>
+                <p className="text-muted-foreground">
+                  Receive intelligent recommendations to optimize your diet and lifestyle.
+                </p>
+              </div>
             </Card>
           </div>
         </section>
 
         <section className="container py-12 md:py-24">
-          <div className="relative">
-            <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Make Healthy Eating Simple
-                </h2>
-                <p className="mt-4 text-muted-foreground">
-                  List takes the guesswork out of nutrition by providing you with personalized recommendations and easy-to-follow meal plans.
-                </p>
+          <div className="grid gap-12 md:grid-cols-2 items-center">
+            <div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Make Healthy Eating Simple
+              </h2>
+              <p className="mt-4 text-muted-foreground">
+                Lish takes the guesswork out of nutrition by providing you with personalized recommendations and easy-to-follow meal plans.
+              </p>
+              <div className="mt-8 grid gap-4">
+                <div className="flex items-center gap-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1490645935967-10de6ba17061"
+                    alt="Healthy meal prep"
+                    className="w-24 h-24 rounded-lg object-cover"
+                  />
+                  <div>
+                    <h3 className="font-semibold">Personalized Meal Plans</h3>
+                    <p className="text-sm text-muted-foreground">Tailored to your dietary preferences and goals</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1551806235-642171de4834"
+                    alt="Fitness tracking"
+                    className="w-24 h-24 rounded-lg object-cover"
+                  />
+                  <div>
+                    <h3 className="font-semibold">Progress Tracking</h3>
+                    <p className="text-sm text-muted-foreground">Monitor your health journey with ease</p>
+                  </div>
+                </div>
               </div>
-              <div className="relative aspect-video rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1490645935967-10de6ba17061"
-                  alt="Healthy food bowl"
-                  className="object-cover"
-                />
-              </div>
+            </div>
+            <div className="relative aspect-square rounded-xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1466637574441-749b8f19452f"
+                alt="Mobile app showcase"
+                className="object-cover w-full h-full"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-background/20" />
             </div>
           </div>
         </section>
@@ -88,7 +138,7 @@ export default function Home() {
       <footer className="border-t">
         <div className="container py-8 flex justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 List. All rights reserved.
+            © 2024 Lish. All rights reserved.
           </p>
           <ThemeToggle />
         </div>
